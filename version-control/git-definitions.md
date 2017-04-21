@@ -1,4 +1,5 @@
 # Git Definitions
+By Dominique
 
 **Instructions: ** Define each of the following Git concepts.
 
