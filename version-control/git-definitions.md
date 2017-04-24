@@ -1,5 +1,5 @@
 # Git Definitions
-By Dominique
+By Dominique Goncalves
 
 **Instructions: ** Define each of the following Git concepts.
 
