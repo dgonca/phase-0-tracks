@@ -1,6 +1,6 @@
 #octopus{
 	position: absolute;
-	top: 100px;
+	top: 110px;
 	left: 50%;
 	transform: translate(-50%, 0 );
 	margin: 0 auto;
@@ -8,14 +8,14 @@
 
 #hat{
 	position: relative;
-	top: 25px;
+	top: 35px;
 	left: 360px;
 	z-index: 3;
 }
 
 #glasses{
 	position: relative;
-	top: 85px;
+	top: 95px;
 	left: 570px;
 	z-index: 3;
 }
