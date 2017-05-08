@@ -1,3 +1,4 @@
+puts "Hello Clerk"
 puts "What is the hamster's name? Please enter."
 hamster_name = gets.chomp
 puts "Hello #{hamster_name}!"
