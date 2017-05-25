@@ -80,34 +80,34 @@ p search_array(numbers, 26)
 # ints = [2, 10, 8, 7, 3, 21, 1]
 
 
-# def bubble_sort(array)
-# 	#defining n as array length so you can easily pull it
-#   n = array.length
-#   #looping through the array
-#   loop do
-#   	#nothing has been swapped yet, so the variable is false
-#     swapped = false
+def bubble_sort(array)
+	#defining n as array length so you can easily pull it
+  n = array.length
+  #looping through the array
+  loop do
+  	#nothing has been swapped yet, so the variable is false
+    swapped = false
 
-#     #n-1 times is array.length-1 because the length counts how many things while arrays start at 0
-#     #doing things with i to iterate through each integer in the array
-#     (n-1).times do |i|
-#     	#if a number in array is bigger than the number next to it, swap those two numbers
-#     	#and tell your method that these numbers have been swapped
-#       if array[i] > array[i+1]
-#         array[i], array[i+1] = array[i+1], array[i]
-#         swapped = true
-#       end
-#     end
+    #n-1 times is array.length-1 because the length counts how many things while arrays start at 0
+    #doing things with i to iterate through each integer in the array
+    (n-1).times do |i|
+    	#if a number in array is bigger than the number next to it, swap those two numbers
+    	#and tell your method that these numbers have been swapped
+      if array[i] > array[i+1]
+        array[i], array[i+1] = array[i+1], array[i]
+        swapped = true
+      end
+    end
 
-#     #if nothing has been swapped or no more has been swapped, then the loop ends because everything 
-#     #is sorted
+    #if nothing has been swapped or no more has been swapped, then the loop ends because everything 
+    #is sorted
 
-#     break if not swapped
-#   end
+    break if not swapped
+  end
 
-#   array
-# end
+  array
+end
 
-# p bubble_sort(ints)	
+p bubble_sort(ints)	
 
 
