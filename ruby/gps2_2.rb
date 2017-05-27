@@ -6,6 +6,7 @@
   # print the list to the console [can you use one of your other methods here?]
 # output: [what data type goes here, array or hash?] we would want a hash
 
+#GROCERY LIST
 
 
 def grocery_list(items)
