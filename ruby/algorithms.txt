@@ -1,0 +1,4 @@
+Robot riding the elevator:
+
+-Approach the elevator and locate the up and down arrows
+-
