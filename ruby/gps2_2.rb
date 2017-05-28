@@ -89,4 +89,22 @@ end
 
 prettify_list(master_list)
 =======
+	
+
+#reflection
+#pseudocode: i learned how to make it more indepth and that the more you write out the easier it is for everyone to understand
+
+#for this challenege it was better to use hashes because it allows you store key and values for the amount of items for each thing
+#because if we were to use arrays, youd have to list out how many of each, like repeating and then count how many times each item appears
+#in the array
+
+#a method returns the last value that was asked for
+
+#you can pass any type of data as an argument
+
+#you make sure that the method is returning the correct thing and then when you call the method save it to another variable 
+#when you want to use that in another method, you call it as an argument and thats how you can insert it into other methods.
+
+#the way to use variables between methods is really solidifed now, it makes much more sense than before. also the ways of iterating through 
+#all the steps is much more set in stone.
 
