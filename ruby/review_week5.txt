@@ -1,0 +1,22 @@
+Data structures are super useful in programming because they give you places to store information and easily access it without having to memorize all these different kind of variables. You can also store information that are related to each other and easily separate them out.
+
+An array is a data structure that takes in any data type and stores it as a list. The items are separated by commas which split up the indicies. You can access the items in the array using the index of the array and you can cycle through them. 
+2 examples: a data set of lottery numbers
+			a set of quotes from one person
+
+
+A hash is a data structure that stores a key & input that reference each other. The key is the name of what is holding the input. You can assign other hashes, arrays, or data types to keys
+
+2 examples: student roster in the different grades
+			Top cities in different countries
+
+Iteration is useful because with it you can go through the different items in arrays and do with what you want: sort, manipulate, separate, etc.
+
+Real life task: going through all the restaurants near you and deciding what you want to eat.
+
+A block is kind of like a method, its like a little block of code that you can, if you want, run it repeatedly. This is kind of just code that you can drop in when you need it, you do not name it like how you define a method. 
+
+A block parameter is kind of similar to an argument in a method. Its a way of creating a variable that stands in for something that is related to the array or hash you are working on, and allow you to use the parameter inside your block to reference the array or hash.
+if you use x, and are iterating through an array - the x can indicate the index that it is currently at. 
+
+The value comes from the type of array/hash you are working with. You call it whatever you want. 

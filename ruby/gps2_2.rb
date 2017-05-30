@@ -1,3 +1,4 @@
+
 # Method to create a list
 # input: string of items separated by spaces (example: "carrots apples cereal pizza")
 # steps: 
@@ -105,10 +106,5 @@ prettify_list(master_list)
 
 #the way to use variables between methods is really solidifed now, it makes much more sense than before. also the ways of iterating through 
 #all the steps is much more set in stone.
-
-
-
-
-
 
 

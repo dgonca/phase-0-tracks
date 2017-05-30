@@ -1,0 +1,22 @@
+How to make a robot work an elevator:
+
+First the robot needs to approach the elevator. Elevators are typically big metal doors that are inset and have a button pad next to them. 
+The button on the top is to go up in the building and the button on the bottom is to go down. 
+If you are on the ground floor, or if there is not a down button, you can not go down in the building. 
+
+You figure out what floor number you need to go to and the floor number you are on and then figure out if it is larger or smaller than the floor number you are currently on.
+
+Then you can figure out to go up or down.
+
+Hit the up arrow if the floor number you need to go to is larger than the floor number you are on.
+Hit the down arrow if the floor number you need to go to is smaller than the floor number you are on. 
+
+When the elevator arrives and the doors open, people might be getting off. Wait for them to get off and then get into the elevator. 
+There will be a grid of numbers on one of the sides of the door.
+1 or G (for ground) will be at the bottom. Count the buttons up to the floor you are going on and press the button. 
+
+Wait as the elevator goes up or down. People might be getting off on different floors. Stay in the elevator until it arrives to your floor. 
+
+There is a panel tracking what floor the elevator is on. Wait until you see your floor number to get off.
+When the floor number does appear, get off the elevator. 
+You have arrived on your floor. 
