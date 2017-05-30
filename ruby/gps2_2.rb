@@ -88,8 +88,7 @@ def prettify_list(list)
 end
 
 prettify_list(master_list)
-=======
-	
+
 
 #reflection
 #pseudocode: i learned how to make it more indepth and that the more you write out the easier it is for everyone to understand
@@ -107,4 +106,5 @@ prettify_list(master_list)
 
 #the way to use variables between methods is really solidifed now, it makes much more sense than before. also the ways of iterating through 
 #all the steps is much more set in stone.
+
 
