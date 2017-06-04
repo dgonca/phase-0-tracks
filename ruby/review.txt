@@ -1,0 +1,45 @@
+1. A variable is a way to store information. A programmer will use variables to a. store information b. variables can change throughout the code.
+
+2. full_name = first_name + last_name 
+	will create a variable full_name
+	run first_name variable
+	add to last_name variable
+
+	final result: "Abraham Lincoln"
+
+3. string: a variable that is stored as a string of letters, typically to form a word"
+		city = "Paris"
+	integer: a variable that is stored as a number, only whole numbers, negative and positive.
+		paris_neighborhood = "3"
+	float: a variable that is stored as a number, all numbers, decimals included.
+		my_bank_account = "200.03"
+	nil: a variable that is stored as nothing.
+		amount_of_enegery = nil
+	boolean: a variable to store a true or false value.
+		am_i_tired = true
+
+4. an algorithm is a set of rules to set out how you need to run the code. Pseudocode is making algorithms. 
+5. Lists & arrays and trees
+
+6. a method is a way of putting code together to be able to run the same code over and over again without having to re-type it. Programmers use it for this reason, and to group code together. 
+
+7. return value: returns the value of the code at the time when called.
+   side effect: a side effect of code, like puts or p that produces something based on the code.
+   parameter: parameters are for arguments 
+   argument: when calling a method, you can put arguments inside of the () and define arguments so that you can call them later, entering variables or strings
+   implicit return: returns code for right there
+
+ 8. global scope - refers to the whole code
+ 	method scope - refers to the method
+ 		for variables
+ 		if a variable is created in a method, it only applies to a method
+
+ 9. control flow: how the program reads the code - and using terms to structure the code. 
+
+ 10. loop: runs code over and over again
+ 	 if: if statements that call into question the boolean that you run
+ 	 else: runs when the if statement is not true
+ 	 elsif: runs to have another if statement if the if statement is not true
+ 	 while: runs while a statement is true
+ 	 until: runs until a statement is true
+ 	 
