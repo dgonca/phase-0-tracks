@@ -1,4 +1,5 @@
 //reversing strings
+//we have to use for loops
 
 //call a function that reverses a string
 
