@@ -1,3 +1,13 @@
+body{
+  
+  background-color: white;
+}
+
+#center-site{
+  margin: 0 auto;
+  max-width: 960px;
+}
+
 blockquote {
   border-left: 5px solid blue;
   padding: 15px;
@@ -12,6 +22,22 @@ cite {
 #external-links ul {
   list-style-type: none;
   padding-left: 0px;
+}
+
+#external-links{
+  width: 20%;
+  float: right;
+
+
+}
+
+main{
+  width: 80%;
+
+}
+
+#tutorial{
+  width: 80%;
 }
 
 /* you're welcome to edit the
@@ -30,3 +56,47 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+
+/*@media screen and (max-width: 500px) {
+  body{
+    background-color: skyblue;
+  }
+  
+}
+
+
+*/
+
+@media screen and (max-width: 500px){
+  #external-links{
+    width: 100%;
+    float: none;
+  }
+  main{
+    width: 100%;
+  }
+
+  body{
+    background-color: pink;
+  }
+
+}
+
+@media screen and (min-width: 950px){
+  #external-links{
+    width: 15%;
+    float: right;
+   /*display: inline-block;*/
+  }
+  main{
+    width: 70%;
+    float: right;
+   /* display: inline-block;*/
+  }
+  #tutorial{
+    width: 15%;
+    float: left;
+   /* display: inline-block;*/
+  }
+}
+

@@ -1,0 +1,13 @@
+1.
+Classes are objects that you can build in ruby to do many different types of things. You make classes to house together certain variables and methods that apply to a certain type of code that you want to create over and over again, with slightly different inputs. This is where classes become very helpful. You build the class and add some different states and behaviors to it and then outside of the class as driver code you call a new instance of the class into a variable. From there, if your class code allows it, you can access different variables from the class and then use the different behaviors for your new instance to act upon. The state of the class are the different variables that you define to be important and rely in that class. Instance variables have the @ sign in front of them and are initalized in the initalized method of the class. This is where you can have an arugment to assign a value to these instance variables, off the bat, or set them to a certain value for every instance that is ever called. The behaviors of classes are defined by the instance methods written inside of the class. These methods can use the instance variables from the initilialze method to change the way the state is depending on what action you want your object to take. These methods can be called by the instances in driver code and you can have them take arguments to assign a different value for each instance you call. 
+
+2. Attributes are related to the state of the class where as they can become instance variables describing how the object looks or is. 
+
+3. If i were to take a cup I would assign a couple attributes to it through the initialize method and have each new instance have different values. Some of the attributes i would give it are height, handle or no handle, material it is made out of.
+
+4. The purpose of the initialize method is to assign values to instance variables - it runs when a new instance is called. 
+
+5. A module is a little block of code that you create methods in that can be used in many different classes. So say we create a module Sleep and create two methods, heavy sleeper and light sleeper, and we made a bunch of different animal classes, we can call for whichever one if it is a heavy sleeper or a light sleeper, but without retyping the method in each class. 
+
+6. You can use a module on its own or in different classes
+
