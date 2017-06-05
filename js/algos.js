@@ -31,18 +31,22 @@ function matchTest(object1, object2){
 	breakme: if (Object.keys(object1)[0] === Object.keys(object2)[0]){
 		if (object1[Object.keys(object1)[0]] === object2[Object.keys(object2)[0]]){
 			thereIsAMatch = true; 
+			console.log("Objects have a key value pair match");
 			break breakme;
 			
 		} else{
 			thereIsAMatch = false;
+			console.log("Objects don't have a key value pair match");
 		}
 	} else if (Object.keys(object1)[1] === Object.keys(object2)[1]){
 		if (object1[Object.keys(object1)[1]] === object2[Object.keys(object2)[1]]){
 			thereIsAMatch = true;
+			console.log("Objects have a key value pair match");
 			break breakme;
 			
 		} else{
 			thereIsAMatch = false;
+			console.log("Objects don't have a key value pair match");
 		}
 	} else{
 		console.log("Something is wrong with the code")
