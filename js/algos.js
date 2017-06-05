@@ -28,6 +28,26 @@ console.log("The longest word in the array is: " + wordPosition)
 function matchTest(object1, object2){
 	thereIsAMatch = false;
 
+	breakme: if (Object.keys(object1)[0] === Object.keys(object2)[0]){
+		if (object1[Object.keys(object1)[0]] === object2[Object.keys(object2)[0]]){
+			thereIsAMatch = true; 
+			break breakme;
+			
+		} else{
+			thereIsAMatch = false;
+		}
+	} else if (Object.keys(object1)[1] === Object.keys(object2)[1]){
+		if (object1[Object.keys(object1)[1]] === object2[Object.keys(object2)[1]]){
+			thereIsAMatch = true;
+			break breakme;
+			
+		} else{
+			thereIsAMatch = false;
+		}
+	} else{
+		console.log("Something is wrong with the code")
+	}
+
 	//go through the two objects
 	//take first key of each object
 	//see if they match
@@ -40,6 +60,10 @@ function matchTest(object1, object2){
 	//object1[key2][value] =? object2[key2][value]
 	//if true return true - if false return false
 }
+
+var firstObject = {name: "Jan", age: 28};
+var secondObject = {name: "Jan", age: 39};
+matchTest(firstObject, secondObject);
 
 
 ////// release 2
@@ -67,7 +91,7 @@ function randomTest(int){
 	console.log(array);
 }
 
-randomTest(10)
+// randomTest(10);
 
 
 
