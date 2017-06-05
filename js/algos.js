@@ -3,18 +3,22 @@
 //whichever has the longest length, print that item
 
 var array = ["long phrase","longest phrase","longer phrase"];
-console.log(array)
-var tracking = [];
+function longestWord(array) {
+	console.log(array)
+	var tracking = [];
 
-for (i = 0; i < array.length - 1; i++){
-	var len = array[i].length
-	tracking.push(len)
+	for (i = 0; i < array.length - 1; i++){
+		var len = array[i].length
+		tracking.push(len)
+	}
+
+	var largestNumber = Math.max(...tracking)
+	var numberPosition = tracking.indexOf(largestNumber)
+	var wordPosition = array[numberPosition]
+	console.log("The longest word in the array is: " + wordPosition)
 }
 
-var largestNumber = Math.max(...tracking)
-var numberPosition = tracking.indexOf(largestNumber)
-var wordPosition = array[numberPosition]
-console.log("The longest word in the array is: " + wordPosition)
+longestWord(array);
 
 /////// release 1
 //find a key-value match
@@ -97,6 +101,14 @@ function randomTest(int){
 
 // randomTest(10);
 
+
+//#2 release 2
+//for (i = 1; i < 10; i++){
+//		var randAmount = Math.floor(Math.random() * 10) + 1;
+//		var mainArray = randomTest(randAmount);
+//		longestWord(mainArray);
+//
+// }
 
 
 
