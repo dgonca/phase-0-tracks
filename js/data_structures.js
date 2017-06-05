@@ -24,9 +24,9 @@ function Car(type, color, isItFast){
 	this.isItFast = isItFast;
 	this.drive = function() {
 		if (this.isItFast){
-			console.log("*zooooooooooom*");
+			console.log("**zooooooooooom**");
 		} else {
-			console.log("*clug clug clug*");
+			console.log("**clug clug clug**");
 		}
 	}
 
