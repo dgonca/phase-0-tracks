@@ -1,0 +1,114 @@
+SELECT * FROM students;
+1|Izabelle Rush|9|4|
+2|Moriah Papp|11|3.3|
+3|Christin Paul|12|3|
+4|Duncan Hackett|10|4.1|
+5|Mercy Babble|10|3.8|
+6|Gracie Pope|11|4|
+7|Hallie Lake|9|3.5|
+8|Baby Blue|9|2.9|
+9|Lorraine Wieck|11|2.8|
+10|Radcliff Burns|10|3.2|
+11|Oria Gelen|12|3.1|
+12|Joshua Small|12|3.4|
+
+sqlite> UPDATE students SET homeroom_id = 1 WHERE grade = 9;
+sqlite> UPDATE students SET homeroom_id = 2 WHERE grade = 10;
+sqlite> UPDATE students SET homeroom_id = 3 WHERE grade = 11;
+sqlite> UPDATE students SET homeroom_id = 4 WHERE grade = 12;
+
+
+SELECT * FROM students;
+1|Izabelle Rush|9|4|1
+2|Moriah Papp|11|3.3|3
+3|Christin Paul|12|3|4
+4|Duncan Hackett|10|4.1|2
+5|Mercy Babble|10|3.8|2
+6|Gracie Pope|11|4|3
+7|Hallie Lake|9|3.5|1
+8|Baby Blue|9|2.9|1
+9|Lorraine Wieck|11|2.8|3
+10|Radcliff Burns|10|3.2|2
+11|Oria Gelen|12|3.1|4
+12|Joshua Small|12|3.4|4
+
+SELECT * FROM students, teachers WHERE students.homeroom_id = teachers.id;
+1|Izabelle Rush|9|4|1|1|Mrs. Barsotti
+2|Moriah Papp|11|3.3|3|3|Ms. Adams
+3|Christin Paul|12|3|4|4|Mr. Hardy
+4|Duncan Hackett|10|4.1|2|2|Mr. Pace
+5|Mercy Babble|10|3.8|2|2|Mr. Pace
+6|Gracie Pope|11|4|3|3|Ms. Adams
+7|Hallie Lake|9|3.5|1|1|Mrs. Barsotti
+8|Baby Blue|9|2.9|1|1|Mrs. Barsotti
+9|Lorraine Wieck|11|2.8|3|3|Ms. Adams
+10|Radcliff Burns|10|3.2|2|2|Mr. Pace
+11|Oria Gelen|12|3.1|4|4|Mr. Hardy
+12|Joshua Small|12|3.4|4|4|Mr. Hardy
+
+SELECT students.name, teachers.name FROM students JOIN teachers ON students.homeroom_id = teachers.id;
+Izabelle Rush|Mrs. Barsotti
+Moriah Papp|Ms. Adams
+Christin Paul|Mr. Hardy
+Duncan Hackett|Mr. Pace
+Mercy Babble|Mr. Pace
+Gracie Pope|Ms. Adams
+Hallie Lake|Mrs. Barsotti
+Baby Blue|Mrs. Barsotti
+Lorraine Wieck|Ms. Adams
+Radcliff Burns|Mr. Pace
+Oria Gelen|Mr. Hardy
+Joshua Small|Mr. Hardy
+
+DELETE FROM students WHERE gpa < 3.0;
+SELECT * FROM students;
+1|Izabelle Rush|9|4|1
+2|Moriah Papp|11|3.3|3
+3|Christin Paul|12|3|4
+4|Duncan Hackett|10|4.1|2
+5|Mercy Babble|10|3.8|2
+6|Gracie Pope|11|4|3
+7|Hallie Lake|9|3.5|1
+10|Radcliff Burns|10|3.2|2
+11|Oria Gelen|12|3.1|4
+12|Joshua Small|12|3.4|4
+
+SELECT students.name, teachers.name FROM students
+   ...> INNER JOIN teachers ON students.homeroom_id = teachers.id;
+
+Izabelle Rush|Mrs. Barsotti
+Moriah Papp|Ms. Adams
+Christin Paul|Mr. Hardy
+Duncan Hackett|Mr. Pace
+Mercy Babble|Mr. Pace
+Gracie Pope|Ms. Adams
+Hallie Lake|Mrs. Barsotti
+Radcliff Burns|Mr. Pace
+Oria Gelen|Mr. Hardy
+Joshua Small|Mr. Hardy
+
+SELECT students.gpa, teachers.name FROM students
+   ...> INNER JOIN teachers ON students.homeroom_id = teachers.id;
+4|Mrs. Barsotti
+3.3|Ms. Adams
+3|Mr. Hardy
+4.1|Mr. Pace
+3.8|Mr. Pace
+4|Ms. Adams
+3.5|Mrs. Barsotti
+3.2|Mr. Pace
+3.1|Mr. Hardy
+3.4|Mr. Hardy
+
+SELECT students.grade, teachers.name FROM students
+   ...> LEFT JOIN teachers ON students.homeroom_id = teachers.id;
+9|Mrs. Barsotti
+11|Ms. Adams
+12|Mr. Hardy
+10|Mr. Pace
+10|Mr. Pace
+11|Ms. Adams
+9|Mrs. Barsotti
+10|Mr. Pace
+12|Mr. Hardy
+12|Mr. Hardy
