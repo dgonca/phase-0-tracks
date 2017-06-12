@@ -72,6 +72,8 @@ day = gets.chomp
 
 if day == "Saturday" || day == "saturday"
 	delete_list(todolist)
+
+	p "Restart the program and say that it is now Sunday - you can start your week fresh"
 else
 	p "Do you need to create an item?"
 	answer = gets.chomp
