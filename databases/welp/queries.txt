@@ -1,0 +1,27 @@
+SELECT * FROM
+   ...> users
+   ...> INNER JOIN
+   ...> reviews
+   ...> ON users.id = reviews.user_id
+   ...> INNER JOIN
+   ...> businesses
+   ...> ON reviews.business_id = businesses.id;
+
+  4|Steven|Wonder|1|4|great food!|6|4|6|Sushi World
+5|Holly|Berry|2|5|great service, quick to pick me up|2|5|2|Amir's Towing
+1|Bradford|Pitt
+|3|1|horrible service and does not have any actual sports equipment|7|1|7|JoeBob's Sportz Barn
+
+SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment
+   ...> FROM users
+   ...> INNER JOIN reviews
+   ...> ON users.id = reviews.user_id
+   ...> INNER JOIN
+   ...> businesses
+   ...> ON reviews.business_id = businesses.id;
+
+   Steven|Wonder|Sushi World|4|great food!
+Holly|Berry|Amir's Towing|5|great service, quick to pick me up
+Bradford|Pitt
+|JoeBob's Sportz Barn|1|horrible service and does not have any actual sports equipment
+
