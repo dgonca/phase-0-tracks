@@ -13,7 +13,10 @@ require 'sqlite3'
 
 #at the end of the week, delete the table and start over for the next week
 
+
 todolist = SQLite3::Database.new("todolist.db")
+
+
 
 create_list_cmd = <<-SQL
 
@@ -29,7 +32,17 @@ create_list_cmd = <<-SQL
 
 SQL
 
+
+
 todolist.execute(create_list_cmd)
+
+
+def delete_list(db)
+	p "Hey user it's Saturday, we're restarting your to do list for the next week"
+	db.execute("DROP TABLE list_for_the_week")
+end
+
+
 
 def add_item(db)
 	p "What item do you need to add to your list"
@@ -49,22 +62,31 @@ def add_item(db)
 	# db
 
 	p "Here is your updated list"
-	
+	p db.execute("SELECT * FROM list_for_the_week")
 	
 end
 
 p "Hello user! We have created a structure for your to do list"
-p "Do you need to create an item?"
-answer = gets.chomp
+p "What day of the week is it?"
+day = gets.chomp
 
-if answer == "yes" || answer == "Yes"
-	add_item(todolist)
-elsif answer == "no" || answer == "No"
-	p "Here is your to do list"
-	p todolist.execute("SELECT * FROM list_for_the_week")
+if day == "Saturday" || day == "saturday"
+	delete_list(todolist)
 else
-	p "Something is wrong with your answer"
+	p "Do you need to create an item?"
+	answer = gets.chomp
+
+	if answer == "yes" || answer == "Yes"
+		add_item(todolist)
+	elsif answer == "no" || answer == "No"
+		p "Here is your to do list"
+		p todolist.execute("SELECT * FROM list_for_the_week")
+	else
+		p "Something is wrong with your answer"
+	end
 end
+
+
 
 # p "Do you need to add an item? Yes or No"
 # answer = gets.chomp
