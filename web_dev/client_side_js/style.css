@@ -1,0 +1,17 @@
+img{
+	width: 200px;
+	height: auto;
+	transform: rotate(90deg);
+	padding: 10px;
+}
+
+#name{
+	padding: 10px;
+}
+
+#details {
+	margin: 10px;
+	margin-top: 20px;
+	padding-left: 10px;
+	width: 30%;
+}
