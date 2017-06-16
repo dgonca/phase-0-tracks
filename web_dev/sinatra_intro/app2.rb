@@ -73,3 +73,16 @@ get '/:num1/add/:num2' do
 	sum = params[:num1].to_i + params[:num2].to_i
 	"The result is #{sum}"
 end
+
+
+
+#///// research
+#is sinatra only web app library in ruby? what are some others?
+#Cuba, Padrino, Lotus
+
+#is SQLite the only option for databse w sinatra? what are some others?
+#POstgreSQL, mysql, 
+
+#what is a web stack?
+#the collection of software required for web development: operating system
+#programming language, database software, and a web server
