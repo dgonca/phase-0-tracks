@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>DBC campuses</title>
+	</head>
+	<body>
+	<h1>Campuses</h1>
+		<% chi_counter = 0 %>
+		<% nyc_counter = 0 %>
+		<% sd_counter = 0 %>
+		<% sea_counter = 0 %>
+		<% sf_counter = 0 %>
+
+	<% @students.each do |student| %>
+        <% if student['campus'] == "CHI" %>
+        	<% chi_counter += 1 %>
+		<% elsif student['campus'] == "NYC" %>
+			<% nyc_counter += 1 %>
+		<% elsif student['campus'] == "SEA" %>
+			<% sea_counter += 1 %>
+		<% elsif student['campus'] == "SD" %>
+			<% sd_counter += 1 %>
+		<% elsif student['campus'] == "SF" %>
+			<% sf_counter += 1 %>
+		<% end %>
+
+    <% end %> 
+
+    	<p>Number of students at Chicago DBC: <%= chi_counter %></p>
+		<p>Number of students at New York DBC: <%= nyc_counter %></p>
+		<p>Number of students at Seattle DBC: <%= sea_counter %></p>
+		<p>Number of students at San Francisco DBC: <%= sf_counter %></p>
+		<p>Number of students at San Diego DBC: <%= sd_counter %></p>
+	</body>
+</html>
+
